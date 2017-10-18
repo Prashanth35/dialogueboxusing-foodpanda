@@ -1,0 +1,70 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="diloguebox.registration" xmlns:html="http://www.w3.org/1999/xhtml"
+		xmlns:sf="sap.ui.layout.form">
+	<Page title="Title" id="idreg">
+		<content>
+		<sf:SimpleForm>
+
+<sf:content>
+
+<VBox>
+
+<HBox>
+
+<Button text="Facebook" icon="image/fb-icon.png" type="Accept"/>
+
+<Button text="Google" icon="image/g-icon2.png" type="Reject"/>
+
+</HBox>
+
+<Text text="Or use email address"/>
+
+<Label text="Your email Address"/>
+
+<Input />
+
+<Label text="Password"/>
+
+<Input />
+
+<Label text="Full Name"/>
+
+<Input/>
+
+<Label text="Mobile Number(for order updates)"/>
+
+<Input/>
+
+<Label text="Address"/>
+
+<TextArea/>
+
+<HBox>
+
+<CheckBox/>
+
+<Text text="I've read and accept"/>
+
+<Link text="Terms and Conditions"/>
+
+</HBox>
+
+<Button text="Create Account"/>
+
+<HBox>
+
+<Text text="HAVE AN ACCOUNT?"/>
+
+<Link text="Login" press="backlogin"/>
+
+</HBox>
+
+</VBox>
+
+</sf:content>
+
+</sf:SimpleForm>
+	
+		</content>
+	</Page>
+</core:View>

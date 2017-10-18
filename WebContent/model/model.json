@@ -1,0 +1,44 @@
+{
+
+	"dataCollection": {
+		"title": "HOTEL HEADING",
+		"items": [{
+				"item": "ROLLS",
+				"items": [{
+						"item": "veg role"
+					},
+					{
+						"item": "non-veg role"
+					},
+					{
+						"item": "with cheese"
+					},
+					{
+						"item": "without cheese"
+					}
+				]
+			},
+			{
+				"item": "Biryani",
+				"items": [{
+						"item": "veg Biryani"
+					},
+					{
+						"item": "non-veg Biryani"
+					},
+					{
+						"item": "combo pack veg"
+					},
+					{
+						"item": "combo pack non-veg"
+					}
+				]
+			}
+
+
+		]
+	}
+
+
+
+}
