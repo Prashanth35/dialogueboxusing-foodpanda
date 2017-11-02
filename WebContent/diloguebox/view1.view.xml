@@ -1,40 +1,33 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 		controllerName="diloguebox.view1" xmlns:html="http://www.w3.org/1999/xhtml">
 		
-	<Page title="{/dataCollection/title}">
+	<Page title="{/dataCollection/title}" showFooter="false" id="Idpage">
 	
 	<content>
 	    <Image src="image/hotel1.jpg" width="100%" height="100px"/>
-	    <Button id="idbutton" text="Register" press="Login"/>
+	  
+		<FlexBox
+					height="50px"
+					alignItems="Start"
+					justifyContent="Center">
+					<items>
+						<Button  id="idbutton" text="LogIn" press="Login"/>
+					</items>
+				</FlexBox>
 		
-		<!-- <Panel expandable="true" headerText="{/data/1/ITEMS/0/ROLLS}">
-		<content>
-			<List>
+		
+		
+		
+ <VBox items="{/dataCollection/items}" id="idVBox">
+	<Panel  expandable="true" headerText="{item}"  expand = "getClose1">
+		<List items="{items}"> 
 			<items>
-		<StandardListItem title="{/data/2/SUBITEMS/0/vrole}" description="@150" type="Active" press="openDialogue"></StandardListItem>
-		<StandardListItem title="{/data/2/SUBITEMS/0/nrole}" description="@150"></StandardListItem>
-		</items>
+				<StandardListItem title="{item}" templateShareable="false"  info="{cost}"
+				  icon="{path : 'icon', formatter : '.getIcon'}" description="{description}" wrapping="false" type="Active" press="openDialogue"></StandardListItem>
+			</items>
 		</List>
-		</content>
 	</Panel>
-	<Panel expandable="true" headerText="{/data/1/ITEMS/1/BIRYANI}">
-		<content>
-			<List>
-			<items>
-		<StandardListItem title="{/data/3/SUBITEMS2/0/vbiryani}" description="@150" type="Active" press="openDialogue"></StandardListItem>
-		<StandardListItem title="{/data/3/SUBITEMS2/0/nbiryani}" description="@150"></StandardListItem>
-		</items>
-		</List>
-		</content>
-	</Panel>
-	
- -->	
- <VBox items="{/dataCollection/items}">
-<Panel expandable="true" headerText="{item}">
-
-</Panel>
 </VBox>
-
 
  
  
@@ -58,24 +51,19 @@
                 </Input> 
 
             </content> 
-</Grid>
+</Grid>-->
 	</content>
-	<footer id="idfooter">
+	<footer id="idfooter" >
 				<Toolbar>
 				<ToolbarSpacer/>
-				<Link
-					text="facebook"
-					 />
-				<Link
-					text="twitter"/>
-				<Link
-					text="Linkdin"/>
-				<Link
-					text="contact us" />
+				<core:Icon
+			src="sap-icon://cart"
+			 />
+			 <Text text="Add to Cart"/>
 			</Toolbar>
-	</footer> -->
+	</footer> 
 
-	</content>
+	
 		
 	</Page>
 	

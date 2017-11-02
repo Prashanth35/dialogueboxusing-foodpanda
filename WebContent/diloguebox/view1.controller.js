@@ -13,8 +13,13 @@ sap.ui.controller("diloguebox.view1", {
 	        oModel.loadData("model/model.json");
 
 	        this.getView().setModel(oModel);
-
+	    
 	},
+	// onExpand: function(){
+     	
+     	//this.getView().byId("idpanel").fireExpand()
+     	
+    // },
 
 	       // var list = this.getView().byId("idlist");
 
@@ -41,7 +46,7 @@ sap.ui.controller("diloguebox.view1", {
 	              	  content : new sap.m.List({
 
 	              items : {path:"types of items",
-
+   
 	              	    template:oTemplate1}
 
 	            }),
@@ -62,7 +67,7 @@ sap.ui.controller("diloguebox.view1", {
 	Login : function(){
 		
 		var appref= this.getView().getParent();
-		appref.to("idreg")
+		appref.to("idlogin")
 		
 		
 	},
@@ -81,9 +86,62 @@ sap.ui.controller("diloguebox.view1", {
 * This hook is the same one that SAPUI5 controls get after being rendered.
 * @memberOf diloguebox.view1
 */
-//	onAfterRendering: function() {
-//
-//	},
+	onAfterRendering: function() {
+		
+		 var oModel2=new sap.ui.model.json.JSONModel();
+	        oModel2.loadData("model/model2.json");
+	    	
+	    var oDialog2 = new sap.m.Dialog({title  : "Delivery Location:"} );
+	     oDialog2.setModel(oModel2);
+	     
+	     var labelcolony=new sap.m.Label({text : "Select Colony "})
+    	 var labelstreet=new sap.m.Label({text : "Select Street "})
+    	var labelResidential=new sap.m.Label({text : "Select Residential "}) 
+	     
+   	 		
+   	 	 var oComboBoxColony=new sap.m.ComboBox();
+   	 	 oComboBoxColony.bindAggregation("items", "/data2/colonies", new sap.ui.core.Item({ text : "{colony}"}));
+   	 	 
+   	      var oComboBoxstreet=new sap.m.ComboBox();
+   	   oComboBoxstreet.bindAggregation("items", "/data2/streets", new sap.ui.core.Item({ text : "{street}"}));
+ 	 	
+ 	 var oComboBoxResidential=new sap.m.ComboBox();
+ 	oComboBoxResidential.bindAggregation("items", "/data2/Residentials", new sap.ui.core.Item({ text : "{Residential}"}));
+   	
+   	 	
+ 	 	$.sap.require("sap.ui.layout.form.SimpleForm")
+   	 	
+        var simplform = new sap.ui.layout.form.SimpleForm({
+        	 
+        	 content:[ labelcolony,oComboBoxColony,labelstreet, oComboBoxstreet,labelResidential,oComboBoxResidential]
+        	
+        	
+        	
+        }) 
+ 	 	
+ 	 	
+ 	 	
+   	 	oDialog2.addContent(simplform)
+		oDialog2.open();
+ 	 	
+ 	 	
+ 	 	
+ 	 	oDialog2.addButton(new sap.m.Button({text: "cancel",press:function(oEvent){
+			
+			 oDialog2.close()
+		}.bind(this)
+		}))
+
+ 	 	
+ 	 	
+ 	 	
+		oDialog2.addButton(new sap.m.Button({text: "confirm",press:function(oEvent){
+		
+			 oDialog2.close()
+		}.bind(this)
+		}));
+		
+	},
 
 /**
 * Called when the Controller is destroyed. Use this one to free resources and finalize activities.
@@ -92,73 +150,129 @@ sap.ui.controller("diloguebox.view1", {
 //	onExit: function() {
 //
 //	}
-	openDialogue : function() {
-		
-		var oDialog1 = new sap.m.Dialog(
-				{title  : "Title"});
-		//oDialog1.setTitle("My first Dialog");
-		var panel = new sap.m.Panel({expandable:false, headerText:"rolls",
-		content : new sap.m.List({
-			
-			mode : sap.m.ListMode.MultiSelect,
-			items: [new sap.m.StandardListItem
-		({
-			title :"with cheese", info :"@150"
-			
-			
-		}),new sap.m.StandardListItem
-		({
-			title :"without cheese", info :"@150"
-			
-			
-		})]
-		})
-		})
-		      
-		
-		       var sbutton=new sap.m.FlexBox({alignItems:"Start",justifyContent:"Start",items:[
-                           new sap.m.Label({text:"quantity :"}),
-                                     new sap.m.Button (
-                                    		       {
-                                    		    	   text:"-",
-                                    		    	   id:"decrement", press: function(){sap.ui.getCore().byId("incdicin").
-                                    		    		   setValue(parseInt(sap.ui.getCore().byId("incdicin").getValue())-1)},type:"Emphasized" 
-                                    		            } ),
-                                    		            new sap.m.Input (
-                                                 		       {
-                                                 		    	  id:"incdicin",
-                                                 		    	 width:"40px",
-                                                 		    	 value : "0"
-                                                 		    	
-                                                 		            } ),
-                                    		            new sap.m.Button (
-                                                 		       {
-                                                 		    	   text:"+",
-                                                 		    	   id:"increment", press:function(){sap.ui.getCore().byId("incdicin").
-                                    		    		   setValue(parseInt(sap.ui.getCore().byId("incdicin").getValue())+1)},
-                                    		            type:"Accept"
-                                                 		            } )
-                                                               ]});
-		       
-				/*var that=this;
-				function onpress(){
-					that.getView().byId("incdicin").setValue(parseInt(that.getView().byId("incdicin").getValue())-1);
-					
-				}*/
-		      
 	
-		oDialog1.addContent(panel);
-	oDialog1.addContent(sbutton)
+	
+	openDialogue : function(oEvent){
 		
-		oDialog1.addButton(new sap.m.Button({text: "Add to cart", icon:"sap-icon://add-activity", 
-			press:function(){oDialog1.close();}}));
+		var path=oEvent.getSource().getBindingContext().getPath();
+		//debugger;
+		var oDialog1 = new sap.m.Dialog({title  : "select items:"},btn);
+		this.getView().addDependent(oDialog1);
+		 oDialog1.bindElement(path);
+		
+		 
+		// var panel2=new sap.m.Panel({title : "panel2"})
+		 //second panel 
+		 
+		 
+		
+		/* var oList2 = new sap.m.List({mode : sap.m.ListMode.MultiSelect,
+		 items:[
+   new sap.m.StandardListItem({
+	title :"Extra cheese", info :"30₹"			
+           }),
+           new sap.m.StandardListItem({
+				title :"Extra cheese", info :"30₹"			
+		   }),
+   new sap.m.StandardListItem({
+		title :"Extra cheese", info :"30₹"			
+  })
+		        
+	   
+		        
+		  ]
+		 
+		 })
+		 
+		 var panel2=new sap.m.Paanel({"content", oList2 })
+		 
+	 */
+		 var btn=new sap.m.Button({text: "cancel",  
+				press:function(oEvent){
+					
+					
+					 oDialog1.close()
+				}});
+		 
+		 
+		 
+		 oDialog1.addButton(new sap.m.Button({text: "cancel",  
+				press:function(oEvent){
+					
+					
+					 oDialog1.close()
+				}}))
+		 
+		
+		 
+		 var otemp=new sap.m.StandardListItem({
+				title :"{item}", info :"{cost}"			
+		   })
+		
+		 var oList = new sap.m.List({mode : sap.m.ListMode.MultiSelect});
+		 oList.bindAggregation("items", "types", otemp);
+		 
+		      
+		 var stepinput=new sap.m.StepInput({min : 0,  width : "110px"})
+		var label= new sap.m.Label({text:"Quantity:"})
+		 
+		
+	
+		oDialog1.addContent(oList );
+	   // oDialog1.addContent(panel2 )
+		 
+		 oDialog1.addContent(label)
+		oDialog1.addContent(stepinput )
+	
+		
+		oDialog1.addButton(new sap.m.Button({text: "Add to cart", icon:"sap-icon://cart", 
+			press:function(oEvent){
+				
+				 var rejectBtn = this.getView().byId("Idpage").setShowFooter(true);
+				    /*if(rejectBtn.getShowFooter()) {
+				       rejectBtn.setShowFooter(true);
+				   }*/
+				 oDialog1.close()
+			}.bind(this)}));
 		oDialog1.open();
 	},
-onPress:function(oEvent) {
-    var rejectBtn = this.getView().byId("btn2");
-    if(rejectBtn.getVisible()) {
-       rejectBtn.setVisible(false);
-   }
-}
+	
+	getIcon :function(ic){
+		
+		if(ic== true){
+			return "image/veg.JPG";
+		}
+		if(ic== false){
+			return "image/non-veg.JPG";
+		}
+			
+	},
+	
+/*	getClose1 :  function(oEvent){
+//		debugger;
+		var panels=this.getView().byId("Idpage").getContent()[2].getItems()			
+		var i = 0; 	
+		for(; i < panels.length; i++)	
+		     {	
+			this.getView().byId("Idpage").getContent()[2].getItems()[2].setExpanded(true)
+		//	panels[i].detachExpand(getClose1);
+			panels[i].setExpanded(false);
+						//if 
+			if(oEvent.getParameters().expand==true){
+				panels[i].setExpanded(false);	
+			}
+			else{this.getView().byId("Idpage").getContent()[2].getItems()[2].setExpanded(true);}
+
+		}
+		this.getView().byId("Idpage").getContent()[2].getItems()[2].setExpanded(true)
+		
+		//this.getView().byId("Idpage").getContent()[2].getItems()[2].setExpanded(true).detachExpand(getClose1);
+		
+		//this.getView().byId("Idpage").getContent()[2].getItems()[2].detachExpand(getClose1);
+			//this.getView().byId("Idpage").getContent()[2].getItems()[i--].setExpanded(true);
+
+	}
+	*/
+
 
 });

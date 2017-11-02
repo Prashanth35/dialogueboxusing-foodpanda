@@ -1,6 +1,110 @@
 
+
    
   .sapMPage>section {
    
-    background-color: #42bcf4;
+
+    background-color: #d2efe6;
 }
+
+html.sap-desktop .sapMIBar.sapMFooter-CTX {
+    background-color: #637a73;
+}
+.sapMListBGSolid .sapMLIB {
+    background: #edf9f6;
+}
+.rapage .sapUiFormResLayout>div {
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color:  #637a73;
+}
+.rapage .sapUiFormResLayout.sapUiFormBackgrTranslucent>div {
+    background-color: #637a73;
+}
+.sapUiRFL {
+   
+    background-color:#f9fcfb;
+}
+.sapMIBar-CTX.sapMFooter-CTX {
+   
+    background-color: #637a73;
+}
+.sapMPanel .sapMPanelWrappingDiv .sapMPanelHdr, .sapMPanel .sapMPanelWrappingDivTb .sapMIBar.sapMTB {
+    padding-left: 0;
+    margin-left: 3rem;
+    background-color: floralwhite;
+}
+.sapMBarLeft, .sapMBarPH {
+    padding-left: 0.25rem;
+    background-color: #fc1702;
+}
+html[data-sap-ui-animation='on'] .sapMPanelExpandableIcon {
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    background-color: white;
+}
+.sapMBtnInner.sapMBtnText {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    color: red;
+}
+span.sapMBtnInner.sapMBtnAccept {
+    background-image: none;
+    background-color: #007833;
+    border-color: #fc1702;
+    color: rgb(252, 23, 2);
+    text-shadow: none;
+    background-color: white;
+}
+span.sapMBtnInner.sapMBtnEmphasized {
+    background-image: none;
+    background-color: #ffffff;
+    border-color: #fc1702;
+    color: #fc1702;
+    text-shadow: 0 0 0.125rem rgba(0,0,0,0.5);
+}
+.sapMInputBaseInner {
+	 border-color: #fc1702;
+    color: #fc1702;
+    background: #ffffff;
+        border: 1px solid #fc1702;
+    padding-left: 0.25rem;
+   
+   
+}
+.sapMLnk {
+    color: #fc1702;
+    
+}
+.sapMBtn:not(.sapMBtnDisabled) {
+    cursor: pointer;
+    padding-left: 2rem;
+}
+
+.sapMBtn:hover>.sapMBtnHoverable {
+    background-image: none;
+    background-color: #f70404;
+}
+.sapMBtnInner.sapMBtnText {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    color: red;
+    border-color: red;
+   
+}
+.sapUiPopupWithPadding .sapMDialogScrollCont {
+    padding: 1rem;
+    text-align: center;
+}
+.sapMPopup-CTX .sapMIBar.sapMHeader-CTX {
+    background-color: red;
+    background-color: #fc1702;
+    filter: none;
+    background-image: none;
+}
+.sapMBtn:not(.sapMBtnDisabled) {
+    cursor: pointer;
+   padding-left:0rem;
+}
+
+

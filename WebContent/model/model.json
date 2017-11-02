@@ -1,39 +1,903 @@
 {
 
 	"dataCollection": {
-		"title": "HOTEL HEADING",
+		"title": "PARADISE",
 		"items": [{
-				"item": "ROLLS",
+				"item": "Veg Biryani",
+				"id"  : "vegbiryani",
 				"items": [{
-						"item": "veg role"
+					"item": "Veg Biryani",
+					"icon": true,
+					"cost": "214₹",
+					"description": "Fresh vegetables and basmati rice cooked in layers,flavoured with saffron, served with raita and mirchi-ka-salan",
+					"types": [{
+
+							"item": "Single Pack",
+							"cost": "214₹"
+						},
+						{
+							"item": "Family Pack",
+							"cost": "620₹"
+						}
+					]
+
+				}]
+			},
+			{
+				"item": "Chicken Biryani",
+				"id": "ChickenBiryani",
+				"items": [{
+					"item": "Chicken Biryani",
+					"icon": false,
+					"cost": "261₹",
+					"description": "Chicken and basmati rice cooked in layers, flavoured with saffron, served with raita and mirchi-ka-salan",
+					"types": [{
+
+							"item": "Single Pack",
+							"cost": "₹261"
+						},
+						{
+							"item": "Family Pack",
+							"cost": "₹800"
+						},
+						{
+							"item": "Jumbo Pack",
+							"cost": "₹1100"
+						}
+
+					]
+
+				}]
+			},
+
+
+			{
+				"item": "Mutton Biryani",
+				"items": [{
+					"item": "Mutton Biryani",
+					"icon": false,
+					"cost": "261₹",
+					"description": "An aromatic mixture of rice, lamb, saffron, herbs and spices, served with raita and mirchi-ka-salan",
+					"types": [{
+
+							"item": "Single Pack",
+							"cost": "₹279"
+						},
+						{
+							"item": "Family Pack",
+							"cost": "₹900"
+						},
+						{
+							"item": "Jumbo Pack",
+							"cost": "₹1250"
+						}
+
+					]
+
+				}]
+			},
+			{
+				"item": "Egg Biryani",
+				"items": [{
+					"item": "Egg Biryani",
+					"icon": true,
+					"cost": "214₹",
+					"description": "An aromatic mixture of rice, lamb, saffron, herbs and spices, served with raita and mirchi-ka-salan",
+					"types": [{
+
+							"item": "Single Pack",
+							"cost": "₹214"
+						},
+						{
+							"item": "Family Pack",
+							"cost": "₹500"
+						}
+
+					]
+
+				}]
+			},
+			{
+				"item": "VEG SOUPS",
+				"items": [{
+						"item": "Manchow Soup",
+						"icon": true,
+						"cost": "₹134",
+						"description": "Spicy and hot soup made with mixed vegetables",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹134"
+						}]
+
 					},
 					{
-						"item": "non-veg role"
+						"item": "Sweet Corn Vegetable Soup",
+						"icon": "true",
+						"cost": "₹134",
+						"description": "Tender corn kernels and vegetables simmered to a soup",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹134"
+						}]
+
 					},
 					{
-						"item": "with cheese"
+						"item": "Veg Hot & Sour Soup",
+						"icon": true,
+						"cost": "₹134",
+						"description": "Spicy and tangy soup of mushroom and other vegetables",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹134"
+						}]
+
 					},
 					{
-						"item": "without cheese"
+						"item": "Tomato Soup",
+						"icon": true,
+						"cost": "₹134",
+						"description": "Thickened puree of tomato with croutons and fresh cream",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹134"
+						}]
+
 					}
+
+
 				]
 			},
 			{
-				"item": "Biryani",
+				"item": "NON-VEG SOUPS",
 				"items": [{
-						"item": "veg Biryani"
+						"item": "Chicken Manchow Soup",
+						"icon": false,
+						"cost": "₹143",
+						"description": "Spicy and hot soup with chicken and vegetables",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹143"
+						}]
+
 					},
 					{
-						"item": "non-veg Biryani"
+						"item": "Sweet Corn Chicken Soup",
+						"icon": false,
+						"cost": "₹143",
+						"description": "Tender corn kernels and diced chicken,simmered to a soup",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹143"
+						}]
+
 					},
 					{
-						"item": "combo pack veg"
+						"item": "Hot & Sour Chicken Soup",
+						"icon":false,
+						"cost": "₹134",
+						"description": "Spicy and tangy soup with sesame and chilli flavour topped with chicken",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹134"
+						}]
+
 					},
 					{
-						"item": "combo pack non-veg"
+						"item": "Tomato Soup",
+						"icon": false,
+						"cost": "₹134",
+						"description": "Thickened puree of tomato with croutons and fresh cream",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹134"
+						}]
+
 					}
+
+
+				]
+			},
+
+
+			{
+				"item": "VEG-STARTERS",
+				"items": [{
+						"item": "Baby Corn Manchurian",
+						"icon": true,
+						"cost": "₹245",
+						"description": "Crispy baby corn cooked with chillies and soya",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹245"
+						}]
+
+					},
+					{
+						"item": "Veg Spring Roll",
+						"icon": true,
+						"cost": "₹187",
+						"description": "Crisp deep fried rolls with a stuffing of stir-fried vegtables",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹187"
+						}]
+
+					},
+					{
+						"item": "Veg Manchurian",
+						"icon": true,
+						"cost": "₹236",
+						"description": "Stir fried vegetable dumplings in spiced Manchurian sauce",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹236"
+						}]
+
+					},
+					{
+						"item": "Chilli Paneer",
+						"icon": true,
+						"cost": "₹245",
+						"description": "Wok tossed cubes of deep fried paneer, coated with tangy chilli sauce",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹245"
+						}]
+
+					},
+					{
+						"item": "Paneer 65",
+						"icon": true,
+						"cost": "₹245",
+						"description": "Paneer pakoras tossed in curry leaf &chilli flavoured curd sauce",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹245"
+						}]
+
+					},
+					{
+						"item": "Crispy Corn Chilli Pepper",
+						"icon": true,
+						"cost": "₹236",
+						"description": "Wok tossed corn kernels with chilli & peppers",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹236"
+						}]
+
+					},
+					{
+						"item": "Crispy Corn Chilli Pepper",
+						"icon": true,
+						"cost": "₹236",
+						"description": "Wok tossed corn kernels with chilli & peppers",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹236"
+						}]
+
+					}
+
+
+
+				]
+			},
+			{
+				"item": "NON-VEG-STARTERS",
+				"items": [{
+						"item": "Chicken 65",
+						"icon": false,
+						"cost": "₹331",
+						"description": "Tender chicken pakoras tossed in spiced yoghurt sauce with curry leaves",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹331"
+						}]
+
+					},
+					{
+						"item": "Chilli Chicken",
+						"icon": false,
+						"cost": "₹331",
+						"description": "wok tossed cubes of deep fried chicken,coated with tangy chilli sauceChicken Drum Sticks",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹331"
+						}]
+
+					},
+					{
+						"item": "Chicken Drum Sticks",
+						"icon": false,
+						"cost": "₹331",
+						"description": "Deep fried lollipops of chicken, served with hot garlic sauce",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹331"
+						}]
+
+					},
+					{
+						"item": "Pepper Chicken",
+						"icon": false,
+						"cost": "₹331",
+						"description": "Deep fried marinated cubes of chicken flavoured with cracked pepper corns",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹331"
+						}]
+
+					},
+					{
+						"item": "Egg Spring Roll",
+						"icon": false,
+						"cost": "₹198",
+						"description": "Crisp deep fried rolls with a stuffing of stir-fried vegetables & egg",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹198"
+						}]
+
+					},
+					{
+						"item": "Chicken Spring Roll",
+						"icon": false,
+						"cost": "₹198",
+						"description": "Crisp deep fried rolls with a stuffing of stir-fried vegetables & shredded chicken",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹198"
+						}]
+
+					},
+					{
+						"item": "Golden Fried Prawns",
+						"icon": false,
+						"cost": "₹404",
+						"description": "Succulent tiger prawns marinated and deep fried, served with hot garlic sauce",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹404"
+						}]
+
+					},
+					{
+						"item": "Chilli Prawns",
+						"icon": false,
+						"cost": "₹404",
+						"description": "Wok tossed deep fried tiger prawns,",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹404"
+						}]
+
+					},
+
+
+					{
+						"item": "Loose Prawns",
+						"icon": false,
+						"cost": "₹404",
+						"description": "Crisp fried cut pieces of prawns tossed with onions & chillies",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹404"
+						}]
+
+					},
+					{
+						"item": "Chilli Fish",
+						"icon": false,
+						"cost": "₹383",
+						"description": "Wok tossed deep fried fish, coated with tangy chilli sauce",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹383"
+						}]
+
+					},
+					{
+						"item": "Apollo Fish",
+						"icon": false,
+						"cost": "₹383",
+						"description": "Crispy fried fish tossed in a yoghurt sauce with green chillies and curry leaves",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹383"
+						}]
+
+					}
+
+				]
+			},
+			{
+				"item": "CHINESE-NOODLES",
+				"items": [{
+						"item": "Veg Soft Noodles",
+						"icon": true,
+						"cost": "₹197",
+						"description": "",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹197"
+						}]
+
+					},
+					{
+						"item": "Veg Hakka Noodles",
+						"icon": true,
+						"cost": "₹197",
+						"description": "",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹197"
+						}]
+
+					}
+
+
+				]
+			},
+			{
+				"item": "MAINS/RICE",
+				"items": [{
+						"item": "Veg Fried Rice",
+						"icon": true,
+						"cost": "₹197",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹197"
+						}]
+
+					},
+					{
+						"item": "Egg Fried Rice",
+						"icon": true,
+						"cost": "₹208",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹208"
+						}]
+
+					},
+					{
+						"item": "Chicken Fried Rice",
+						"icon": false,
+						"cost": "₹208",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹208"
+						}]
+
+					}
+
+
+				]
+			},
+			{
+				"item": "VEG CURRIES",
+				"items": [{
+						"item": "Dal Fry",
+						"icon": true,
+						"cost": "₹214",
+						"description": "A rich blend of split red and yellow gram, garnished with coriander leaves and butter",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹214"
+						}]
+
+					},
+					{
+						"item": "Dal Makhani",
+						"icon": true,
+						"cost": "₹214",
+						"description": "Simmered black gram and red kidney beans finished with butter and cream",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹214"
+						}]
+
+					},
+					{
+						"item": "Nizami Handi",
+						"icon": false,
+						"cost": "₹214",
+						"description": "Seasonal vegetables cooked in a spicy gravy",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹214"
+						}]
+
+					},
+					{
+						"item": "Kadai Paneer",
+						"icon": false,
+						"cost": "₹331",
+						"description": "Deep fried marinated cubes of chicken flavoured with cracked pepper corns",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹331"
+						}]
+
+					},
+					{
+						"item": "Egg Spring Roll",
+						"icon": false,
+						"cost": "₹198",
+						"description": "Crisp deep fried rolls with a stuffing of stir-fried vegetables & egg",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹198"
+						}]
+
+					},
+					{
+						"item": "Chicken Spring Roll",
+						"icon": false,
+						"cost": "₹198",
+						"description": "Crisp deep fried rolls with a stuffing of stir-fried vegetables & shredded chicken",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹198"
+						}]
+
+					},
+					{
+						"item": "Golden Fried Prawns",
+						"icon": false,
+						"cost": "₹404",
+						"description": "Succulent tiger prawns marinated and deep fried, served with hot garlic sauce",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹404"
+						}]
+
+					}
+
+				]
+			},
+			{
+				"item": "NON-VEG CURRIES",
+				"items": [{
+						"item": "Chicken Curry",
+						"icon":false,
+						"cost": "₹297",
+						"description": "Chicken Cooked in a spicy tomato and onion gravy",
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹297"
+						}]
+
+					},
+					{
+						"item": "Tandoori Chicken Masala",
+						"icon": false,
+						"cost": "₹308",
+						"description": "Succulent chicken legs cooked in aromatic and flavoured spices",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹308"
+						}]
+
+					},
+					{
+						"item": "Butter Chicken Boneless",
+						"icon": false,
+						"cost": "₹214",
+						"description": "Chicken marinated in yoghurt and spices, cooked in tomato puree and cream",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹214"
+						}]
+
+					},
+					{
+						"item": "Kadai Paneer",
+						"icon": false,
+						"cost": "₹331",
+						"description": "Deep fried marinated cubes of chicken flavoured with cracked pepper corns",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹331"
+						}]
+
+					},
+					{
+						"item": "Egg Spring Roll",
+						"icon": false,
+						"cost": "₹198",
+						"description": "Crisp deep fried rolls with a stuffing of stir-fried vegetables & egg",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹198"
+						}]
+
+					},
+					{
+						"item": "Chicken Spring Roll",
+						"icon": false,
+						"cost": "₹198",
+						"description": "Crisp deep fried rolls with a stuffing of stir-fried vegetables & shredded chicken",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹198"
+						}]
+
+					},
+					{
+						"item": "Golden Fried Prawans",
+						"icon": false,
+						"cost": "₹404",
+						"description": "Succulent tiger prawns marinated and deep fried, served with hot garlic sauce",
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹404"
+						}]
+
+					}
+
+				]
+			},
+			{
+				"item": "Rotis",
+				
+				"items": [{
+						"item": "Tandoori",
+						
+						"cost": "₹49",
+						
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹49"
+						}]
+
+					},
+					{
+						"item": "Butter",
+						
+						"cost": "₹63",
+						
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹63"
+						}]
+
+					}
+					
+					
+
+				]
+			},
+			{
+				"item": "DESSERTS",
+				"items": [{
+						"item": "Double ka Meetha",
+						"description": "Bread pudding dessert with a hint of saffron and cardamom",
+
+						"cost": "₹90",
+						
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹90"
+						}]
+
+					},
+					{
+						"item": "Qubani ka Meetha",
+						"description": "Authentic Hyderabadi sweet with stewed apricots",
+						"cost": "₹134",
+						
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹134"
+						}]
+
+					},
+					{
+						"item": "Gulab Jamun",
+						
+						"cost": "₹95",
+						
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹95"
+						}]
+
+					},
+					{
+						"item": "Gajar Ka Halwa",
+						
+						"cost": "₹95",
+						
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹95"
+						}]
+
+					},
+					{
+						"item": "Chocolate Browine",
+						
+						"cost": "₹105",
+						
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹105"
+						}]
+
+					}
+					
+				
+
+				]
+			},
+			{
+				"item": "Fresh Fruit Juices/Drinks",
+				"items": [{
+						"item": "Fresh Fruit Juices",
+						"description": "Apple / Pineapple / Orange / Mango / Grape / Sweet Lime / Cocktail",
+
+						"cost": "₹90",
+						
+						"types": [{
+
+							"item": "Apple",
+							"cost": "₹90"
+						},
+						{
+							"item": "Pineapple",
+							"cost": "₹90"
+						},
+						{
+							"item": "Orange",
+							"cost": "₹90"
+						},
+						{
+
+							"item": "Grape",
+							"cost": "₹90"
+						},
+						{
+							"item": " Sweet Lime",
+							"cost": "₹90"
+						},
+						{
+							"item": "Cocktail",
+							"cost": "₹90"
+						}
+						]
+
+					},
+					{
+						"item": "Fresh Lime Water",
+					
+						"cost": "₹54",
+						
+
+						"types": [{
+
+							"item": "Single",
+							"cost": "₹54"
+						}]
+
+					},
+					{
+						"item": "COOL DRINKS",
+						"description": "Coca Cola fountain 300 ml / Fanta fountain 300 ml 45/ Sprite fountain 300 ml / Thums up fountain 300 ml",
+						"cost": "₹45",
+						
+
+						"types": [{
+
+							"item": "Coca Cola fountain 300 ml",
+							"cost": "₹45"
+						},
+						{
+
+							"item": "Fanta fountain 300 ml 45",
+							"cost": "₹45"
+						},
+						{
+
+							"item": " Sprite fountain 300 ml ",
+							"cost": "₹45"
+						},
+						{ 
+
+							"item": "Thums up fountain 300 ml",
+							"cost": "₹45"
+						}
+	
+						]
+
+					}
+				
 				]
 			}
+
 
 
 		]

@@ -1,0 +1,40 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="diloguebox.Login" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title" id="idlogin" xmlns:sf="sap.ui.layout.form" >
+		<content>
+		
+		<sf:SimpleForm>
+
+<sf:content>
+
+<Button text="Facebook" icon="image/fb-icon.png" type="Accept"/>
+
+<Button text="Google" icon="image/g-icon2(1).png" type="Reject"/>
+
+<Label text="Email"/>
+
+<Input/>
+
+<Label text="Password"/>
+
+<Input />
+
+
+<Button text="Login" press="gotomainpage"/>
+
+<HBox>
+
+<Text text="DO NOT HAVE AN ACCOUNT ?"/>
+
+<Link text="SIGNUP" press="gotoregister"/>
+
+</HBox>
+
+
+</sf:content>
+
+</sf:SimpleForm>
+	
+		</content>
+	</Page>
+</core:View>

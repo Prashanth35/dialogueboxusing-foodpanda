@@ -1,0 +1,39 @@
+{
+	"data2": {
+
+		"colonies": [{
+				"colony": "Mytrivanam"
+			},
+			{
+				"colony": "S.R.Nagar"
+			},
+			{
+				"colony": "Panjagutta"
+			}
+		],
+		"streets": [{
+				"street": "SAP street1"
+			},
+			{
+				"street": "SAP street2"
+			},
+			{
+				"street": "Ranga street"
+			}
+		],
+		"Residentials": [{
+				"Residential": "S.S.Chamber"
+			},
+			{
+				"Residential": "Aditya Eclave"
+			},
+			{
+				"Residential": "Supraja Hills"
+			}
+		]
+
+
+
+
+	}
+}

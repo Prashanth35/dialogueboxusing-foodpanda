@@ -13,7 +13,7 @@
 
 <Button text="Facebook" icon="image/fb-icon.png" type="Accept"/>
 
-<Button text="Google" icon="image/g-icon2.png" type="Reject"/>
+<Button text="Google" icon="image/g-icon.png" type="Reject"/>
 
 </HBox>
 
@@ -49,7 +49,7 @@
 
 </HBox>
 
-<Button text="Create Account"/>
+<Button text="Create Account" press="Onpress"/>
 
 <HBox>
 

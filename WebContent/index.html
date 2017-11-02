@@ -3,14 +3,15 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
-        <link href="CSS/main.css" rel="stylesheet" type="text/css"/>
+      
 		<script src="resources/sap-ui-core.js"
 				id="sap-ui-bootstrap"
 				data-sap-ui-libs="sap.m"
+				data-sap-ui-xx-bindingSyntax="complex"
 				data-sap-ui-theme="sap_bluecrystal">
 		</script>
 		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
-
+  <link href="CSS/main.css" rel="stylesheet" type="text/css"/>
 		<script>
 				sap.ui.localResources("diloguebox");
 				var app = new sap.m.App({initialPage:"idview11"});
@@ -23,7 +24,16 @@
 			    	type:sap.ui.core.mvc.ViewType.XML
 			    	
 			    });
-			    app.addPage(page1) 
+			    app.addPage(page1) ;
+			    
+                  var page2=sap.ui.view({
+			    	
+			    	id:"idlogin",
+			    	viewName:"diloguebox.Login",
+			    	type:sap.ui.core.mvc.ViewType.XML
+			    	
+			    });
+			    app.addPage(page2)
 				app.placeAt("content");
 		</script>
 
